@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="4dp"
+    app:cardCornerRadius="12dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginBottom="8dp"
+
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/itemListSpecificImage"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:src="@drawable/cafe3"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/itemListSpecificTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="دوره آموزش بار سرد"
+            android:textColor="@color/normalTextColor"
+            android:textSize="16sp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/itemListSpecificImage" />
+
+        <TextView
+            android:id="@+id/itemListSpecificHour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ساعت"
+            android:textColor="@color/normalTextColor"
+            android:textSize="16sp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="4dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/itemListSpecificImage" />
+
+        <TextView
+            android:id="@+id/itemListSpecificHourNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="8"
+            android:textColor="@color/normalTextColor"
+            android:textSize="16sp"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="4dp"
+            app:layout_constraintStart_toEndOf="@+id/itemListSpecificHour"
+            app:layout_constraintTop_toBottomOf="@+id/itemListSpecificImage" />
+
+
+        <TextView
+            android:id="@+id/itemListSpecificInstructor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginRight="8dp"
+            android:text="ریچارد هاردویک"
+            android:textColor="@color/normalTextColor"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/itemListSpecificTitle" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

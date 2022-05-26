@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_margin="4dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="3dp"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/itemListCommentUserImage"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="12dp"
+            android:src="@drawable/user"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="12dp"
+            android:text="کاربر شماره 1"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:id="@+id/itemListCommentUserName"
+            android:textColor="@color/normalTextColor"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/itemListCommentUserImage"
+            app:layout_constraintEnd_toStartOf="@+id/itemListCommentUserImage"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/itemListCommentUserImage" />
+
+        <TextView
+            android:id="@+id/itemListComment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="12dp"
+            android:lineSpacingExtra="3dp"
+            android:minHeight="40dp"
+            android:text="کافه خوبی بود. از نحوه پذیرایی راضی بودم ولی نظافتشون یکم ضعیف بود. ایشالا برای سری بعدی این مورد هم رعایت بشه عالیه"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/itemListCommentUserImage" />
+
+
+        <ImageView
+            android:id="@+id/itemListCommentIconStar"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/ic_star"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/itemListComment" />
+
+        <TextView
+            android:id="@+id/itemListCommentRate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:text="4.3"
+            android:gravity="center"
+
+            app:layout_constraintBottom_toBottomOf="@+id/itemListCommentIconStar"
+            app:layout_constraintStart_toEndOf="@+id/itemListCommentIconStar"
+            app:layout_constraintTop_toTopOf="@+id/itemListCommentIconStar" />
+
+
+        <TextView
+            android:id="@+id/itemListCommentDateText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:text="ساعت پیش"
+            android:gravity="center"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/itemListCommentIconStar"
+            app:layout_constraintStart_toEndOf="@+id/itemListCommentRate"
+            app:layout_constraintTop_toTopOf="@+id/itemListCommentIconStar" />
+
+        <TextView
+            android:id="@+id/itemListCommentDateNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2"
+            android:gravity="center"
+            android:layout_marginLeft="4dp"
+            app:layout_constraintBottom_toBottomOf="@+id/itemListCommentIconStar"
+            app:layout_constraintStart_toEndOf="@+id/itemListCommentDateText"
+            app:layout_constraintTop_toTopOf="@+id/itemListCommentIconStar" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</com.google.android.material.card.MaterialCardView>

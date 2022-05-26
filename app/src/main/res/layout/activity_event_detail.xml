@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Events.EventDetailActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/eventDetailImage"
+            android:layout_width="411dp"
+            android:layout_height="350dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/uno"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_marginBottom="12dp"
+            android:backgroundTint="@color/gold"
+            app:cardCornerRadius="25dp"
+            app:layout_constraintBottom_toBottomOf="@+id/eventDetailImage"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:id="@+id/profileTvUserName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="4dp"
+                android:text="چهارشنبه 31 فروردین"
+                android:textColor="@color/normalTextColor"
+                android:textSize="18sp" />
+        </androidx.cardview.widget.CardView>
+
+
+        <TextView
+            android:id="@+id/eventDetailEventTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="16dp"
+            android:text="ایونت بازی گروهی اونو"
+            android:textColor="@color/normalTextColor"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/eventDetailImage" />
+
+
+        <TextView
+            android:id="@+id/eventDetailOrganizer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:text="کافه روکلانژ"
+            android:textColor="@color/normalTextColor"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/eventDetailImage" />
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/eventDetailEntryCharge"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:text="48000"-->
+        <!--            android:textColor="@color/normalTextColor"-->
+        <!--            tools:layout_editor_absoluteX="53dp"-->
+        <!--            tools:layout_editor_absoluteY="390dp" />-->
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/eventDetailEntry"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:text="تومان"-->
+        <!--            android:textColor="@color/normalTextColor"-->
+        <!--            tools:layout_editor_absoluteX="16dp"-->
+        <!--            tools:layout_editor_absoluteY="390dp" />-->
+
+        <TextView
+            android:id="@+id/eventDetailConditionsText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="شرایط ورود"
+            android:textColor="@color/normalTextColor"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/eventDetailEventTitle" />
+
+        <TextView
+            android:id="@+id/texttttt"
+            android:layout_width="379dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="16dp"
+            android:lineSpacingExtra="4dp"
+            android:text="رعایت شئونات اسلامی \n همراه داشتن برگه رزرو در صورت ثبت نام آنلاین \n حضور داشتن حداقل 15 دقیقه قبل از شروع \n گرداننده ایونت در صورت بی نظمی حق اخراج دارد \n و..."
+            android:textColor="@color/normalTextColor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/eventDetailConditionsText" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView3"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:backgroundTint="@color/gold"
+            app:cardCornerRadius="25dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/texttttt">
+
+            <TextView
+                android:id="@+id/profileTvEventExplain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="4dp"
+                android:text="در مورد بازی گروهی اونو"
+                android:textColor="@color/normalTextColor"
+                android:textSize="18sp" />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/eventDetailTvReserve"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="رزرو این ایونت"
+            android:textSize="20sp"
+            android:textColor="@color/normalTextColor"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView3" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="با دوستات برو"
+            android:textColor="@color/normalTextColor"
+            android:textSize="20dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/eventDetailTvReserve" />
+
+
+        <!--        <ru.embersoft.expandabletextview.ExpandableTextView-->
+        <!--            android:id="@+id/eventDetailExpandableTextView"-->
+        <!--            android:layout_width="0dp"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginLeft="16dp"-->
+        <!--            android:layout_marginRight="16dp"-->
+        <!--            app:etv_animationTime="20"-->
+        <!--            app:etv_expandLines="0"-->
+        <!--            app:etv_showLine="false"-->
+        <!--            android:gravity="right"-->
+        <!--            app:etv_textContentColor="@color/normalTextColor"-->
+        <!--            app:etv_textContentSize="14sp"-->
+        <!--            app:etv_textExpand="ادامه ..."-->
+        <!--            app:etv_textShrink="بستن"-->
+        <!--            app:etv_textStateColor="@color/normalTextColor"-->
+        <!--            app:layout_constraintLeft_toLeftOf="parent"-->
+        <!--            app:layout_constraintRight_toRightOf="parent"-->
+        <!--            app:layout_constraintTop_toBottomOf="@+id/texttttt" />-->
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

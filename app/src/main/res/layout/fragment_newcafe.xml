@@ -1,0 +1,579 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/dirtyWhite">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/NC_Til_cafeName"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="16dp"
+            android:hint="نام کافه"
+            android:textColorHint="@color/normalTextColor"
+            app:boxCornerRadiusBottomEnd="15dp"
+            app:boxCornerRadiusBottomStart="15dp"
+            app:boxCornerRadiusTopEnd="15dp"
+            app:boxCornerRadiusTopStart="15dp"
+            app:boxStrokeColor="@color/mainColor"
+            app:boxStrokeWidth="0.5dp"
+            app:boxStrokeWidthFocused="1dp"
+            app:hintTextColor="@color/mainColor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/NC_Tiet_cafeName"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_gravity="center"
+                android:cursorVisible="false"
+                android:inputType="text"
+                android:maxLength="30"
+                android:paddingTop="4dp"
+                android:paddingBottom="0dp"
+                android:maxLines="1"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/NC_Til_cafeAddress"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="16dp"
+            android:hint="آدرس کافه"
+            android:textColorHint="@color/normalTextColor"
+            app:boxCornerRadiusBottomEnd="15dp"
+            app:boxCornerRadiusBottomStart="15dp"
+            app:boxCornerRadiusTopEnd="15dp"
+            app:boxCornerRadiusTopStart="15dp"
+            app:boxStrokeColor="@color/mainColor"
+            app:boxStrokeWidth="0.5dp"
+            app:boxStrokeWidthFocused="1dp"
+            app:hintTextColor="@color/mainColor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/NC_Til_cafeName">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/NC_Tiet_cafeAddress"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_gravity="center"
+                android:cursorVisible="false"
+                android:paddingTop="4dp"
+                android:paddingBottom="0dp"
+                android:inputType="text"
+                android:maxLength="30"
+                android:maxLines="1"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/NC_Til_cafeManager"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="16dp"
+            android:hint="نام مدیر مجموعه"
+            android:textColorHint="@color/normalTextColor"
+            app:boxCornerRadiusBottomEnd="15dp"
+            app:boxCornerRadiusBottomStart="15dp"
+            app:boxCornerRadiusTopEnd="15dp"
+            app:boxCornerRadiusTopStart="15dp"
+            app:boxStrokeColor="@color/mainColor"
+            app:boxStrokeWidth="0.5dp"
+            app:boxStrokeWidthFocused="1dp"
+            app:hintTextColor="@color/mainColor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/NC_Til_cafeAddress">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/NC_Tiet_cafeManager"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_gravity="center"
+                android:cursorVisible="false"
+                android:paddingTop="4dp"
+                android:paddingBottom="0dp"
+                android:inputType="textPersonName"
+                android:maxLength="30"
+                android:maxLines="1"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/NC_Til_cafeStaffNumber"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="16dp"
+            android:hint="تعداد پرسنل"
+            android:textColorHint="@color/normalTextColor"
+            app:boxCornerRadiusBottomEnd="15dp"
+            app:boxCornerRadiusBottomStart="15dp"
+            app:boxCornerRadiusTopEnd="15dp"
+            app:boxCornerRadiusTopStart="15dp"
+            app:boxStrokeColor="@color/mainColor"
+            app:boxStrokeWidth="0.5dp"
+            app:boxStrokeWidthFocused="1dp"
+            app:hintTextColor="@color/mainColor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/NC_Til_cafeCapacityNumber"
+            app:layout_constraintTop_toBottomOf="@+id/NC_Til_cafeManager">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/NC_Tiet_cafeStaffNumber"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_gravity="center"
+                android:paddingTop="4dp"
+                android:paddingBottom="0dp"
+                android:cursorVisible="false"
+                android:inputType="number"
+                android:maxLength="30"
+                android:maxLines="1"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/NC_Til_cafeCapacityNumber"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
+            android:hint="ظرفیت کافه"
+            android:textColorHint="@color/normalTextColor"
+            app:boxCornerRadiusBottomEnd="15dp"
+            app:boxCornerRadiusBottomStart="15dp"
+            app:boxCornerRadiusTopEnd="15dp"
+            app:boxCornerRadiusTopStart="15dp"
+            app:boxStrokeColor="@color/mainColor"
+            app:boxStrokeWidth="0.5dp"
+            app:boxStrokeWidthFocused="1dp"
+            app:hintTextColor="@color/mainColor"
+            app:layout_constraintEnd_toStartOf="@+id/NC_Til_cafeStaffNumber"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/NC_Til_cafeManager">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/NC_Tiet_cafeCapacityNumber"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_gravity="center"
+                android:paddingTop="4dp"
+                android:paddingBottom="0dp"
+                android:cursorVisible="false"
+                android:inputType="number"
+                android:maxLength="30"
+                android:maxLines="1"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/NC_Til_cafeStartWorking"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="16dp"
+            android:hint="شروع ساعت کاری"
+            android:textColorHint="@color/normalTextColor"
+            app:boxCornerRadiusBottomEnd="15dp"
+            app:boxCornerRadiusBottomStart="15dp"
+            app:boxCornerRadiusTopEnd="15dp"
+            app:boxCornerRadiusTopStart="15dp"
+            app:boxStrokeColor="@color/mainColor"
+            app:boxStrokeWidth="0.5dp"
+            app:boxStrokeWidthFocused="1dp"
+            app:hintTextColor="@color/mainColor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/NC_Til_cafeStopWorking"
+            app:layout_constraintTop_toBottomOf="@+id/NC_Til_cafeStaffNumber">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/NC_Tiet_cafeStartWorking"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_gravity="center"
+                android:paddingTop="4dp"
+                android:paddingBottom="0dp"
+                android:cursorVisible="false"
+                android:maxLength="30"
+                android:maxLines="1"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/NC_Til_cafeStopWorking"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
+            android:hint="پایان ساعت کاری"
+            android:textColorHint="@color/normalTextColor"
+            app:boxCornerRadiusBottomEnd="15dp"
+            app:boxCornerRadiusBottomStart="15dp"
+            app:boxCornerRadiusTopEnd="15dp"
+            app:boxCornerRadiusTopStart="15dp"
+            app:boxStrokeColor="@color/mainColor"
+            app:boxStrokeWidth="0.5dp"
+            app:boxStrokeWidthFocused="1dp"
+            app:hintTextColor="@color/mainColor"
+            app:layout_constraintEnd_toStartOf="@+id/NC_Til_cafeStartWorking"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/NC_Til_cafeStaffNumber">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/NC_Tiet_cafeStopWorking"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_gravity="center"
+                android:paddingTop="4dp"
+                android:paddingBottom="0dp"
+                android:cursorVisible="false"
+                android:maxLength="30"
+                android:maxLines="1"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cons_pickImage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="16dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/NC_Til_cafeStartWorking">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnPickImage"
+                android:layout_width="wrap_content"
+                android:layout_height="56dp"
+                android:background="@drawable/background_button"
+                android:elevation="8dp"
+
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="انتخاب عکس"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/ImagePickerRecycler"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/btnPickImage"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:id="@+id/line_options1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="16dp"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cons_pickImage">
+
+            <CheckBox
+                android:id="@+id/Chk_BoardGames"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/background_checkbox"
+                android:buttonTint="@color/normalTextColor"
+                android:layoutDirection="rtl"
+                android:text="بوردگیم"
+                android:textColor="@color/normalTextColor" />
+
+            <CheckBox
+                android:id="@+id/Chk_Parking"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_weight="1"
+                android:background="@drawable/background_checkbox"
+                android:buttonTint="@color/normalTextColor"
+                android:layoutDirection="rtl"
+                android:text="پارکینگ"
+                android:textColor="@color/normalTextColor" />
+
+            <CheckBox
+                android:id="@+id/Chk_smokeFree"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/background_checkbox"
+                android:buttonTint="@color/normalTextColor"
+                android:layoutDirection="rtl"
+                android:text="سیگار آزاد"
+                android:textColor="@color/normalTextColor" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/line_options2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="16dp"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/line_options1">
+
+            <CheckBox
+                android:id="@+id/Chk_Events"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/background_checkbox"
+                android:buttonTint="@color/normalTextColor"
+                android:layoutDirection="rtl"
+                android:text="ایونت"
+                android:textColor="@color/normalTextColor" />
+
+            <CheckBox
+                android:id="@+id/Chk_wifi"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_weight="1"
+                android:background="@drawable/background_checkbox"
+                android:buttonTint="@color/normalTextColor"
+                android:layoutDirection="rtl"
+                android:text="وای فای"
+                android:textColor="@color/normalTextColor" />
+
+            <CheckBox
+                android:id="@+id/Chk_kids"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/background_checkbox"
+                android:buttonTint="@color/normalTextColor"
+                android:layoutDirection="rtl"
+                android:text="کودک"
+                android:textColor="@color/normalTextColor" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/line_options3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="16dp"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/line_options2">
+
+
+            <CheckBox
+                android:id="@+id/Chk_VeganAndVegetarian"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/background_checkbox"
+                android:buttonTint="@color/normalTextColor"
+                android:layoutDirection="rtl"
+                android:text="وگان و وجترین"
+                android:textColor="@color/normalTextColor" />
+
+            <CheckBox
+                android:id="@+id/Chk_LowAbility"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/background_checkbox"
+                android:buttonTint="@color/normalTextColor"
+                android:layoutDirection="rtl"
+                android:text="افراد کم توان"
+                android:textColor="@color/normalTextColor" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/line_options4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="16dp"
+            android:weightSum="3"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/line_options3">
+
+
+            <CheckBox
+                android:id="@+id/CheckFilterWc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/background_checkbox"
+                android:buttonTint="@color/normalTextColor"
+                android:layoutDirection="rtl"
+                android:text="سرویس بهداشتی"
+                android:layout_weight="1"
+                android:textColor="@color/normalTextColor" />
+
+            <CheckBox
+                android:id="@+id/CheckFilterVIP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:paddingRight="4dp"
+                android:paddingLeft="4dp"
+                android:background="@drawable/background_checkbox"
+                android:buttonTint="@color/normalTextColor"
+                android:layoutDirection="rtl"
+                android:text="VIP"
+                android:layout_weight="1"
+                android:textAlignment="textEnd"
+                android:textColor="@color/normalTextColor" />
+            <CheckBox
+                android:id="@+id/CheckFilterOpenArea"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="1"
+                android:paddingRight="4dp"
+                android:paddingLeft="4dp"
+                android:background="@drawable/background_checkbox"
+                android:buttonTint="@color/normalTextColor"
+                android:layoutDirection="rtl"
+                android:text="فضای باز"
+                android:textColor="@color/normalTextColor" />
+        </LinearLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="16dp"
+            android:hint="نوع کافه"
+            app:boxCornerRadiusBottomEnd="15dp"
+            app:boxCornerRadiusBottomStart="15dp"
+            app:boxCornerRadiusTopEnd="15dp"
+            app:boxCornerRadiusTopStart="15dp"
+            app:boxStrokeColor="@color/mainColor"
+            app:boxStrokeWidth="0.5dp"
+            app:boxStrokeWidthFocused="1dp"
+            app:endIconTint="@color/mainColor"
+            app:hintTextColor="@color/mainColor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/line_options4">
+
+            <AutoCompleteTextView
+                android:id="@+id/Actv_CafeType"
+                android:layout_width="match_parent"
+                android:paddingTop="4dp"
+                android:paddingBottom="0dp"
+                android:layout_height="56dp"
+                android:inputType="none" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView2"
+            android:layout_width="0dp"
+            android:layout_height="180dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="16dp"
+            app:cardCornerRadius="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/map" />
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="ثبت این کافه"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:elevation="8dp"
+            android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="90dp"
+            android:background="@drawable/background_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView2" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+
+

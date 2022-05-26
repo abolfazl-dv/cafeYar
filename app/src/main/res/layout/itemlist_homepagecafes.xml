@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="240dp"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent">
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/materialCardView"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@color/transparent"
+        app:cardCornerRadius="18dp"
+        app:cardElevation="20dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/itemListHomeCafeImage"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/cafe3" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <TextView
+        android:id="@+id/itemListHomeCafeName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="کافه الف"
+        android:textColor="@color/normalTextColor"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/materialCardView" />
+
+    <TextView
+        android:id="@+id/itemListHomeCafeDistanceMeasure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="12dp"
+        android:text="km"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/materialCardView" />
+
+    <TextView
+        android:id="@+id/itemListHomeCafeDistance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:text="12"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/itemListHomeCafeDistanceMeasure"
+        app:layout_constraintTop_toTopOf="@+id/itemListHomeCafeDistanceMeasure" />
+
+
+    <ImageView
+        android:id="@+id/itemListHomeCafeStarIcon"
+        android:layout_width="17dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="16sp"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/ic_star"
+       app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/itemListHomeCafeName"
+        />
+
+    <TextView
+        android:id="@+id/itemListHomeCafeRate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:text="4.7"
+        android:layout_marginTop="2dp"
+        app:layout_constraintStart_toEndOf="@+id/itemListHomeCafeStarIcon"
+        app:layout_constraintTop_toBottomOf="@+id/itemListHomeCafeName" />
+
+    <TextView
+        android:id="@+id/itemListHomeCafeSlash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="/"
+        app:layout_constraintTop_toBottomOf="@+id/itemListHomeCafeName"
+        app:layout_constraintLeft_toRightOf="@+id/itemListHomeCafeRate"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="4dp"
+        />
+
+    <TextView
+        android:id="@+id/itemListHomeCafeCommentText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="دیدگاه"
+        app:layout_constraintTop_toBottomOf="@+id/itemListHomeCafeName"
+        app:layout_constraintLeft_toRightOf="@+id/itemListHomeCafeSlash"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="4dp"
+        />
+
+    <TextView
+        android:id="@+id/itemListHomeCafeComment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="2dp"
+        android:text="16"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/itemListHomeCafeCommentText"
+
+        app:layout_constraintTop_toBottomOf="@+id/itemListHomeCafeName" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

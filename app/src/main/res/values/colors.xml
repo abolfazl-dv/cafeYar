@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="dirtyWhiteLight">#F5F5F5</color>
+    <color name="dirtyWhite">#EBEBEB</color>
+    <color name="mainColor">#F9830B</color>
+    <color name="transparent">#00000000</color>
+    <color name="BottomNavFindCafe">#F9E217</color>
+    <color name="BottomNavCourses">#0791FF</color>
+    <color name="BottomNavEvents">#01FF0B</color>
+    <color name="normalTextColor">#363636</color>
+    <color name="red">#900000</color>
+    <color name="gold">#ffea00</color>
+    <color name="olive">#a2b356</color>
+    <color name="creamy">#E8B176</color>
+    <color name="creamyText">#8E7D6446</color>
+    <color name="creamy_light">#FAEBDC</color>
+    <color name="creamy_transparent">#60E8B176</color>
+    <color name="starbucks">#006241</color>
+    <color name="starbucksText">#002B1C</color>
+    <color name="starbucks_light">#6C006241</color>
+    <color name="mtrl_textinput_default_box_stroke_color">#363636</color>
+    <color name="back1">#FEA8A8</color>
+    <color name="back2">#9AF69A</color>
+    <color name="back3">#8F9AFF</color>
+    <color name="back4">#F9E696</color>
+    <color name="blackTransparent">#75000000</color>
+
+
+</resources>

@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">CafeYarV3</string>
+    <string name="mapbox_access_token">pk.eyJ1IjoiYWJvbGZhemwtZHYiLCJhIjoiY2t2ZmI0bWg1MTE5aDJvcTU1MTk4MGM3YSJ9.0az3xVGti51EmsuGSX0pWw</string>
+    <string-array name="cafetype">
+        <item>کافه</item>
+        <item>کافه باغ</item>
+        <item>کافه رستوران</item>
+        <item>کافه گیم</item>
+        <item>کافه کتاب</item>
+        <item>قهوه فروشی</item>
+    </string-array>
+
+    <string name="intro1Title">به اپلیکیشن ما خوش اومدین</string>
+    <string name="intro1Desc">این یه اپلیکیشن برای پیدا کردن کافه، اطلاع رسانی ایونت ها و آموزش های مربوط به قهوه است</string>
+    <string name="intro2Title">اکانت کاربری بسازید</string>
+    <string name="intro2Desc">شما به صورت مهمان هم میتونید از این اپلیکیشن استفاده کنید، ولی برای استفاده از تمام امکانات این اپلیکیشن یه اکانت کاربری بسازید</string>
+    <string name="intro3Title">از ما حمایت کنید</string>
+    <string name="test"></string>
+    <string name="intro3Desc">برای حمایت از این اپلیکیشن و کمک به پیشرفت سریع تر اون، نصب این اپلیکیشن رو به دوستاتون پیشنهاد بدید</string>
+</resources>

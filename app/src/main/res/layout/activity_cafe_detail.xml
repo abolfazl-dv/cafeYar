@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/dirtyWhite"
+        tools:context=".CafeDetail.CafeDetailActivity">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cafeDetailButtonHome"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="16dp"
+            android:backgroundTint="@color/gold"
+            app:cardCornerRadius="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_back" />
+
+        </androidx.cardview.widget.CardView>
+
+        <ss.com.bannerslider.Slider
+            android:id="@+id/banner_slider"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:minHeight="50dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/banner_slider">
+
+            <TextView
+                android:id="@+id/cafeDetailcafeName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="کافه فیت"
+                android:textColor="@color/normalTextColor"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="@+id/cafeDetailRatingBar"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/cafeDetailRatingBar" />
+
+            <com.willy.ratingbar.ScaleRatingBar
+                android:id="@+id/cafeDetailRatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srb_clearRatingEnabled="true"
+                app:srb_clickable="false"
+                app:srb_drawableEmpty="@drawable/ic_rating_star_empty"
+                app:srb_drawableFilled="@drawable/ic_rating_star_filled"
+                app:srb_isIndicator="false"
+                app:srb_minimumStars="1"
+                app:srb_numStars="5"
+                app:srb_rating="4"
+                app:srb_scrollable="false"
+                app:srb_starHeight="30dp"
+                app:srb_starPadding="0dp"
+                app:srb_starWidth="30dp"
+                app:srb_stepSize="0.5" />
+
+            <HorizontalScrollView
+                android:id="@+id/cafeDetailAddressCard"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layoutDirection="rtl"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cafeDetailRatingBar">
+
+                <TextView
+                    android:id="@+id/cafeDetailAddress"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="8dp"
+                    android:gravity="right"
+                    android:maxLines="1"
+                    android:text="کرج - جهانشهر - استانداری - خیابان استانداری - کوچه دوم - پلاک 546521 ساختمان اول واحد 89213"
+                    android:textColor="@color/normalTextColor"
+                    android:textSize="14sp" />
+            </HorizontalScrollView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/ACD_Lin1"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/materialCardView3"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:elevation="8dp"
+                app:cardCornerRadius="12dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/materialCardView4"
+                app:layout_constraintTop_toTopOf="parent"
+                app:strokeColor="@color/normalTextColor"
+                app:strokeWidth="0.5dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/constraintMenu"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_marginRight="8dp"
+                        android:background="@drawable/shape_background_12dp"
+                        android:elevation="8dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <ImageView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:src="@drawable/ic_menu"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="6dp"
+                        android:text="مشاهده منوی کافه"
+                        android:textColor="@color/normalTextColor"
+                        android:textSize="12sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/constraintMenu"
+                        app:layout_constraintEnd_toStartOf="@+id/constraintMenu"
+                        app:layout_constraintTop_toTopOf="@+id/constraintMenu" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/materialCardView4"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:elevation="8dp"
+                app:cardCornerRadius="12dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/materialCardView3"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:strokeColor="@color/normalTextColor"
+                app:strokeWidth="0.5dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/constraintLayout2"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_marginRight="8dp"
+                        android:background="@drawable/shape_background_12dp"
+                        android:elevation="8dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <ImageView
+
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:src="@drawable/ic_watch"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <TextView
+                        android:id="@+id/ACD_TV_WorkingStart"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center"
+                        android:text="08:30"
+                        android:textColor="@color/normalTextColor"
+                        android:textSize="15sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/constraintLayout2"
+                        app:layout_constraintEnd_toStartOf="@+id/constraintLayout2"
+                        app:layout_constraintTop_toTopOf="@+id/constraintLayout2" />
+
+                    <TextView
+                        android:id="@+id/ACD_TV_WorkingTa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:text="تا"
+                        android:textColor="@color/normalTextColor"
+                        android:textSize="15dp"
+                        app:layout_constraintBottom_toBottomOf="@+id/ACD_TV_WorkingStart"
+                        app:layout_constraintEnd_toStartOf="@+id/ACD_TV_WorkingStart"
+                        app:layout_constraintTop_toTopOf="@+id/ACD_TV_WorkingStart" />
+
+                    <TextView
+                        android:id="@+id/ACD_TV_WorkingStop"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:text="12:00"
+                        android:textColor="@color/normalTextColor"
+                        android:textSize="15sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/ACD_TV_WorkingTa"
+                        app:layout_constraintEnd_toStartOf="@+id/ACD_TV_WorkingTa"
+                        app:layout_constraintTop_toTopOf="@+id/ACD_TV_WorkingTa" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:id="@+id/line_options1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="16dp"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ACD_Lin1">
+
+            <CheckBox
+                android:id="@+id/Chk_BoardGames"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/background_checkbox"
+                android:buttonTint="@color/normalTextColor"
+                android:clickable="false"
+                android:layoutDirection="rtl"
+                android:text="بوردگیم"
+                android:textColor="@color/normalTextColor" />
+
+            <CheckBox
+                android:id="@+id/Chk_Parking"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_weight="1"
+                android:background="@drawable/background_checkbox"
+                android:buttonTint="@color/normalTextColor"
+                android:clickable="false"
+                android:layoutDirection="rtl"
+                android:text="پارکینگ"
+                android:textColor="@color/normalTextColor" />
+
+            <CheckBox
+                android:id="@+id/Chk_smokeFree"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/background_checkbox"
+                android:buttonTint="@color/normalTextColor"
+                android:checked="true"
+                android:clickable="false"
+                android:layoutDirection="rtl"
+                android:text="سیگار آزاد"
+                android:textColor="@color/normalTextColor" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/line_options2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="16dp"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/line_options1">
+
+            <CheckBox
+                android:id="@+id/Chk_Events"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/background_checkbox"
+                android:buttonTint="@color/normalTextColor"
+                android:checked="true"
+                android:clickable="false"
+                android:layoutDirection="rtl"
+                android:text="ایونت"
+                android:textColor="@color/normalTextColor" />
+
+            <CheckBox
+                android:id="@+id/Chk_wifi"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_weight="1"
+                android:background="@drawable/background_checkbox"
+                android:buttonTint="@color/normalTextColor"
+                android:clickable="false"
+                android:layoutDirection="rtl"
+                android:text="وای فای"
+                android:textColor="@color/normalTextColor" />
+
+            <CheckBox
+                android:id="@+id/Chk_kids"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/background_checkbox"
+                android:buttonTint="@color/normalTextColor"
+                android:checked="true"
+                android:clickable="false"
+                android:layoutDirection="rtl"
+                android:text="کودک"
+                android:textColor="@color/normalTextColor" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/line_options3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="16dp"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/line_options2">
+
+
+            <CheckBox
+                android:id="@+id/Chk_VeganAndVegetarian"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/background_checkbox"
+                android:buttonTint="@color/normalTextColor"
+                android:checked="true"
+                android:clickable="false"
+                android:layoutDirection="rtl"
+                android:text="وگان و وجترین"
+                android:textColor="@color/normalTextColor" />
+
+            <CheckBox
+                android:id="@+id/Chk_LowAbility"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/background_checkbox"
+                android:buttonTint="@color/normalTextColor"
+                android:clickable="false"
+                android:layoutDirection="rtl"
+                android:text="افراد کم توان"
+                android:textColor="@color/normalTextColor" />
+
+        </LinearLayout>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cafeDetailMapCard"
+            android:layout_width="0dp"
+            android:layout_height="170dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="16dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="6dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/line_options3">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/map" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="30dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cafeDetailMapCard">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/cafeDetailCommentRecycler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="30dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
